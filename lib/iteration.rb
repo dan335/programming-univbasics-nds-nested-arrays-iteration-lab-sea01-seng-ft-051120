@@ -39,17 +39,16 @@ def find_greater_pair(src)
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
   
-  largest = nil
-  largestNum = 0
+  largest = []
   
   o = 0
   while o < src.count do
     i = 0
     
-    num = src[o][0] + src[o][1]
-    if (num > largestNum)
-      largestNum = num
-      largest = src[o]
+    if (src[o][0] > src[o][1])
+      largest << src[o][0]
+    else
+      largest << src[o][1]
     end
     
     o += 1
