@@ -70,7 +70,7 @@ def total_even_pairs(src)
   o = 0
   while o < src.count do
     
-    if (src[o][0] % 2 && src[o][1] % 2)
+    if (src[o][0] % 2 == 0 && src[o][1] % 2 == 0)
       sum += src[o][0] + src[o][1]
     end
     
